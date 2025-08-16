@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AML Fraud Detection - Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>AI - Powered AML Fraud Detection</h1>
+  <div class="container">
+    <label for="sender">Sender Name:</label>
+    <input id="sender" type="text" placeholder="e.g. Rajesh Kumar">&nbsp;
+
+    <label for="receiver">Receiver Name:</label>
+    <input id="receiver" type="text" placeholder="e.g. A. Enterprises">&nbsp;
+
+    <label for="amount">Transaction Amount (INR):</label>
+    <input id="amount" type="number" placeholder="e.g. 150000">&nbsp;
+
+    <label for="country">Country:</label>&nbsp;
+    <select id="country">
+      <option value="India">India</option>
+      <option value="USA">USA</option>
+      <option value="Russia">Russia</option>
+      <option value="North Korea">North Korea</option>
+      <option value="UK">UK</option>
+    </select>
+    <br><br>
+  <button id="checkBtn"><b>Check Transaction</b></button>
+  </div>
+
+  <h2>📊 Transaction History</h2>
+  <table id="history">
+    <thead>
+      <tr>
+        <th>Sender</th>
+        <th>Receiver</th>
+        <th>Amount (₹)</th>
+        <th>Country</th>
+        <th>Risk Score</th>
+        <th>Status</th>
+        <th>Reasons</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
